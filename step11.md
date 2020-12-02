@@ -1,7 +1,24 @@
 
 ## 11 - Securing our App
 
-We're going to use CBSecurity to help secure our app.
+We're going to use CBSecurity to help secure our app. First, lets change our default event to our rants.index.
+### Set the default event to `rants.index`
+
+We want our rants to be the homepage instead of the default one.
+
+```js
+// inside the coldbox struct
+coldbox = {
+    defaultEvent = "rants.index",
+    ...
+};
+```
+
+Hit http://127.0.0.1:42518/ and you'll see the main.index with the dump. ColdBox settings require a framework reinit.
+
+Reinit the framework, then you'll see the Rant index.
+
+
 
 ### Install CBSecurity
 

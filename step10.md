@@ -431,22 +431,6 @@ Why not create more unit tests?
 </cfoutput>
 ```
 
-### Set the default event to `rants.index`
-
-We want our rants to be the homepage instead of the default one.
-
-```js
-// inside the coldbox struct
-coldbox = {
-    defaultEvent = "rants.index",
-    ...
-};
-```
-
-Hit http://127.0.0.1:42518/ and you'll see the main.index with the dump. ColdBox settings require a framework reinit.
-
-Reinit the framework, then you'll see the Rant index.
-
 ### The `new` view
 
 ```html
