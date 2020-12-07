@@ -68,4 +68,11 @@ component extends="coldbox.system.testing.BaseTestCase" {
 
 Let's run the tests again!
 
+### Update your tests to use the new Base Spec
+
+Update your Integration tests in the `/tests/specs/integration/` folder to extend the new base Test spec instead of ColdBox's
+
+`extends="tests.resources.BaseIntegrationSpec"`
+
+Let's run the tests again!
 
